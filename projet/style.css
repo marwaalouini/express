@@ -1,0 +1,93 @@
+/* Reset some default styles */
+
+  
+  body {
+    font-family: 'Arial', sans-serif;
+background-image: url(https://images.pexels.com/photos/9572632/pexels-photo-9572632.jpeg);    
+background-size: 100%;
+  }
+  header {
+    background-color: #693d257a;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav{
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #693d25;
+    margin-top: 50px;
+  }
+  
+  /* Coffee Shop Styles */
+  .coffee-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-top: 30px;
+  }
+  
+  .coffee-item {
+    flex: 0 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coffee-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .coffee-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .coffee-item h2 {
+    color: #693d25;
+    margin-top: 10px;
+  }
+  
+  .coffee-item p {
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .coffee-item {
+      flex-basis: calc(50% - 40px);
+    }
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 38%;
+  }

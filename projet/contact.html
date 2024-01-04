@@ -6,18 +6,49 @@
     <link rel="stylesheet" href="styleContact.css">
     <title>contact</title>
 </head>
-<body>
-    <div class="login-box">
-        <h2>Login</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
 
-            <button type="submit">Login</button>
-        </form>
-    </div>
+<body>
+
+<header>
+
+    
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li><a href="/contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <div class="wrapper centered">
+          <article class="letter">
+            <div class="side">
+              <h1>Contact us</h1>
+              <p>
+                <textarea placeholder="Your message"></textarea>
+              </p>
+            </div>
+            <div class="side">
+              <p>
+                <input type="text" placeholder="Your name">
+              </p>
+              <p>
+                <input type="email" placeholder="Your email">
+              </p>
+              <p>
+                <button id="sendLetter">Send</button>
+              </p>
+            </div>
+          </article>
+          <div class="envelope front"></div>
+          <div class="envelope back"></div>
+        </div>
+        <p class="result-message centered">Thank you for your message</p>
+</div>
 </body>
 </html>

@@ -3,8 +3,8 @@
   
   body {
     font-family: 'Arial', sans-serif;
-background-image: url(https://images.pexels.com/photos/9572632/pexels-photo-9572632.jpeg);    
-background-size: 100%;
+background-image: url(https://img.freepik.com/premium-photo/book-table-library-with-row-books-table_865967-52934.jpg);    
+background-size: 1320px 700px;
   }
   header {
     background-color: #693d257a;
@@ -38,43 +38,7 @@ background-size: 100%;
     margin-top: 50px;
   }
   
-  /* Coffee Shop Styles */
-  .coffee-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    margin-top: 30px;
-  }
   
-  .coffee-item {
-    flex: 0 1 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .coffee-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .coffee-item img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  .coffee-item h2 {
-    color: #693d25;
-    margin-top: 10px;
-  }
-  
-  .coffee-item p {
-    color: #333;
-    margin-top: 10px;
-  }
   
   /* Responsive Styles */
   @media (max-width: 768px) {

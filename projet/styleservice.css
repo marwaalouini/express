@@ -1,3 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
 body{
-background-image: url(https://assets.penguinrandomhouse.com/wp-content/uploads/2022/03/07141413/1200x628_books_-Library.jpg);    background-size: cover;
+    background-image: url(https://img.freepik.com/premium-photo/library-university_488220-45262.jpg?size=626&ext=jpg&ga=GA1.2.1475217569.1701188829&semt=ais);
+  background-size: 1350px 700px;
+}
+header {
+    margin-top: 2%;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav{
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #693d25;
+    margin-top: 50px;
+  }
+  
+  
+
+ .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  
+  
+} 
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background:#85603b77;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #021b2e;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "  READ";
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #f0ecec;
+  text-decoration: none;
+  background: #021b2e;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
 }
